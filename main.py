@@ -34,7 +34,7 @@ def is_game_over(board, player):
             
 
 if __name__ == "__main__":
-    board = [[" " for row in range(3)] for col in range(3)]
+    board = [[" " for col in range(3)] for row in range(3)]
 
     player = "X"
     game_over = False
