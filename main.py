@@ -1,4 +1,5 @@
 def print_board(board):
+    print("\n")
     for row in board:
         print(" | ".join(row))
 
@@ -6,7 +7,7 @@ def print_board(board):
 def get_user_input(player):
     while True:
         try:
-            index = int(input(f"Enter the index to place {player} (0-8): "))
+            index = int(input(f"\nEnter the index to place {player} (0-8): "))
             if 0 <= index <= 8:
                 return index
             else:
@@ -51,7 +52,7 @@ if __name__ == "__main__":
             game_over = is_game_over(board, player)
             
             if game_over:
-                print(f"Player {player} won")
+                print(f"\nPlayer {player} won")
             else:
                 if player == "X":
                     player = "O"
@@ -59,11 +60,6 @@ if __name__ == "__main__":
                     player = "X"
                 
         else:
-            print("Alreay taken position")
+            print("\nAlready taken position")
 
     print_board(board)
-        
-
-        
-        
-        
